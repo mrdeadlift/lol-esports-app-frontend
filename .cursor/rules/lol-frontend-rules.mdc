@@ -1,9 +1,72 @@
 ---
-description:
-globs:
+description: 
+globs: 
 ---
 
 # Your rule content
+✅ General（一般ルール）
+-必ずmainブランチからfeatureブランチを切って開発する。
 
-- You can @ files here
-- You can use markdown but dont have to
+-機能開発後はPRを通じてコードレビューを受け、レビューを通過したらmainにマージする。
+
+-PRレビュー時には、必ずUIのスクリーンショットまたはcursorリンクを添付する。
+
+📐 Design（デザイン・UIルール）
+-デザインガイドラインを明確にする（例: EA FCのようなシンプル・モダンなスタイルを基準とする）。
+
+-カラー、フォント、余白サイズ、角丸のサイズは統一し、コンポーネント化を積極的に行う。
+
+-レスポンシブデザインを徹底する（デスクトップ・タブレット・モバイル）。
+
+-Tailwind CSSを使用し、スタイルのハードコーディングは禁止とする。
+
+🧩 Component Management（コンポーネント管理ルール）
+-Atomic Designに基づいてコンポーネントを分類し、atoms・molecules・organismsなどの粒度で管理する。
+
+-コンポーネント名は明確かつ一貫性のある命名規則を用いる（例: PlayerCard, TeamList, MatchDetail）。
+
+-再利用可能なUI要素はStorybookやCursor内で一覧化して管理する。
+
+🗃️ State Management（状態管理ルール）
+-ZustandまたはRedux Toolkitなどシンプルかつ軽量な状態管理ライブラリを採用し、一貫性を保つ。
+
+-APIから取得したデータをキャッシュして、不要なリクエストを避ける。
+
+🔌 API Integration（API統合ルール）
+-APIリクエスト用にはaxiosを推奨し、baseURLや共通ヘッダーを定義したインスタンスを作成する。
+
+-APIレスポンスを型安全に扱うため、TypeScriptの型定義を必ず設定する。
+
+-ローディング状態、エラー処理は共通コンポーネントで明確にユーザーへ示す。
+
+🧪 Testing（テストルール）
+-JestとReact Testing Libraryを使ったユニットテストを必須とする。
+
+-コンポーネントテストでは、最低限レンダリングおよび主要なインタラクションをテストする。
+
+-定期的にビジュアルリグレッションテストを行い、UIの崩れを早期発見する。
+
+🌏 Internationalization（多言語対応ルール）
+-多言語対応が想定されるため、テキストを直接書かずi18nextなどで言語ファイルを通じて管理する。
+
+-デフォルト言語は日本語とし、英語対応の準備も整えておく。
+
+🔄 Performance & Optimization（パフォーマンス最適化ルール）
+-不要な再レンダリングを防ぐため、React.memo、useMemo、useCallbackを適切に利用する。
+
+-画像やアイコンなどのアセットは最適化・圧縮して配置する（推奨: SVGまたはwebp）。
+
+-Lighthouseでスコア90以上を維持することを目標にする。
+
+🛠️ Tools & Utilities（ツール・ユーティリティルール）
+-GitHub Actionsを使用したCI/CDを整備し、lintやテストの自動化を行う。
+
+-コミット前にESLintとPrettierを自動実行するよう設定する。
+
+-Huskyを導入し、コミットやプッシュ時の自動チェックを義務付ける。
+
+📝 Documentation（ドキュメンテーションルール）
+-READMEには開発環境の立ち上げ方、ビルド方法、コーディングルール、使用ライブラリなどを明記する。
+
+-StorybookまたはCursorを利用し、各コンポーネントの説明、props、使い方を文書化する。
+
