@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EA SPORTS FC 25 公式サイト | EA JAPAN",
-  description: "EA SPORTS FC 25 公式サイト | EA JAPAN",
+  title: "LoLESports",
+  description: "LoLESports",
 };
 
 export default function RootLayout({
