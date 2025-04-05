@@ -14,7 +14,7 @@ export default function HeroSection() {
       {/* コンテンツ */}
       <div className="container mx-auto px-4 z-20 relative">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">EA SPORTS FC 25</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">LoL Esports</h1>
           <p className="text-xl md:text-2xl mb-8">サッカーの新時代へようこそ</p>
           <p className="text-lg md:text-xl mb-12">進化したゲームプレイとリアルなグラフィックで、新しいサッカー体験をお届けします。</p>
           

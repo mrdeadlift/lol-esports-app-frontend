@@ -43,13 +43,6 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Buy Button */}
-          <div className="hidden md:flex">
-            <Link href="#buy" className="bg-accent hover:bg-opacity-80 transition-colors px-6 py-2 rounded-full font-medium">
-              今すぐ購入
-            </Link>
-          </div>
-
           {/* Mobile Menu Button */}
           <button 
             className="md:hidden text-white"
