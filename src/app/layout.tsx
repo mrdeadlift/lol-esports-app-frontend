@@ -13,8 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LoLESports",
-  description: "LoLESports",
+  title: "LoL Esports Japan - 最新の試合結果、ニュース、スケジュール",
+  description: "リーグ・オブ・レジェンドの最新eスポーツ情報をお届け。試合結果、チーム情報、大会スケジュール、選手インタビューなど、LoLファン必見のコンテンツが満載。",
+  keywords: "LoL, リーグオブレジェンド, eスポーツ, LJL, プロゲーマー, 大会情報, MSI, Worlds, T1, Faker",
+  openGraph: {
+    title: "LoL Esports Japan - 最新の試合結果、ニュース、スケジュール",
+    description: "リーグ・オブ・レジェンドの最新eスポーツ情報をお届け。試合結果、チーム情報、大会スケジュール、選手インタビューなど、LoLファン必見のコンテンツが満載。",
+    url: "https://lol-esports.jp",
+    siteName: "LoL Esports Japan",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LoL Esports Japan - 最新の試合結果、ニュース、スケジュール",
+    description: "リーグ・オブ・レジェンドの最新eスポーツ情報をお届け。試合結果、チーム情報、大会スケジュール、選手インタビューなど、LoLファン必見のコンテンツが満載。",
+  },
 };
 
 export default function RootLayout({

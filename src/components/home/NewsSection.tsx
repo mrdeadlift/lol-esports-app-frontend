@@ -5,27 +5,27 @@ export default function NewsSection() {
   const news = [
     {
       id: 1,
-      title: "FC 25 最新アップデート情報",
-      summary: "新シーズンの開始に伴い、ゲームバランスとAIの改善を含む大型アップデートが配信開始",
-      date: "2023年10月15日",
-      imageUrl: "/news/update.jpg",
-      url: "#"
+      title: "MSI 2025 開催地が決定",
+      summary: "今年のMid-Season Invitationalは東京で開催。アジア、ヨーロッパ、北米の強豪チームが集結",
+      date: "2025年4月2日",
+      imageUrl: "/news/msi-2025.jpg",
+      url: "/news/msi-2025-location"
     },
     {
       id: 2,
-      title: "ULTIMATE TEAM 新シーズン開始",
-      summary: "新たな選手カードとチャレンジが登場。今シーズンの目玉はレジェンド選手の追加",
-      date: "2023年10月10日",
-      imageUrl: "/news/ultimate-team.jpg",
-      url: "#"
+      title: "LJL Spring Split 決勝戦レポート",
+      summary: "DetonatioN FocusMe が接戦を制し、3年連続のLJLチャンピオンに。MSI出場権を獲得",
+      date: "2025年3月30日",
+      imageUrl: "/news/ljl-finals.jpg",
+      url: "/news/ljl-spring-finals-2025"
     },
     {
       id: 3,
-      title: "eスポーツ世界大会の詳細発表",
-      summary: "FC 25ワールドチャンピオンシップの詳細が公開。予選は来月から開始",
-      date: "2023年10月5日",
-      imageUrl: "/news/esports.jpg",
-      url: "#"
+      title: "T1のFaker、復帰戦で圧巻のプレー",
+      summary: "怪我からの復帰戦で5キル0デスの完璧なパフォーマンス。チームの勝利に大きく貢献",
+      date: "2025年3月25日",
+      imageUrl: "/news/faker-return.jpg",
+      url: "/news/faker-comeback-match"
     }
   ];
 
@@ -63,11 +63,11 @@ export default function NewsSection() {
         </div>
         
         <div className="text-center mt-12">
-          <Link href="#allnews" className="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors px-6 py-3 rounded-full font-medium">
+          <Link href="/news" className="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors px-6 py-3 rounded-full font-medium">
             すべてのニュースを見る
           </Link>
         </div>
       </div>
     </section>
   );
-} 
+}

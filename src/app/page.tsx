@@ -4,6 +4,8 @@ import HeroSection from '@/components/home/HeroSection';
 import FeaturesSection from '@/components/home/FeaturesSection';
 import GameplaySection from '@/components/home/GameplaySection';
 import NewsSection from '@/components/home/NewsSection';
+import ScheduleSection from '@/components/home/ScheduleSection';
+import TeamsSection from '@/components/home/TeamsSection';
 
 export default function Home() {
   return (
@@ -12,7 +14,9 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <FeaturesSection />
+        <ScheduleSection />
         <GameplaySection />
+        <TeamsSection />
         <NewsSection />
       </main>
       <Footer />

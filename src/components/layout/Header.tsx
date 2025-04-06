@@ -15,8 +15,8 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/fc25-logo.svg"
-                alt="EA SPORTS FC 25"
+                src="/images/lol-esports-logo.svg"
+                alt="LoL Esports"
                 width={150}
                 height={40}
                 className="h-10 w-auto"
@@ -29,17 +29,17 @@ export default function Header() {
             <Link href="/" className="hover:text-secondary transition-colors">
               ホーム
             </Link>
-            <Link href="#features" className="hover:text-secondary transition-colors">
-              ゲーム情報
-            </Link>
-            <Link href="#gameplay" className="hover:text-secondary transition-colors">
-              ゲームプレイ
-            </Link>
-            <Link href="#news" className="hover:text-secondary transition-colors">
+            <Link href="/news" className="hover:text-secondary transition-colors">
               ニュース
             </Link>
-            <Link href="#community" className="hover:text-secondary transition-colors">
-              コミュニティ
+            <Link href="/results" className="hover:text-secondary transition-colors">
+              試合結果
+            </Link>
+            <Link href="/schedule" className="hover:text-secondary transition-colors">
+              スケジュール
+            </Link>
+            <Link href="/teams" className="hover:text-secondary transition-colors">
+              チーム
             </Link>
           </nav>
 
@@ -61,20 +61,20 @@ export default function Header() {
               <Link href="/" className="hover:text-secondary transition-colors px-4">
                 ホーム
               </Link>
-              <Link href="#features" className="hover:text-secondary transition-colors px-4">
-                ゲーム情報
-              </Link>
-              <Link href="#gameplay" className="hover:text-secondary transition-colors px-4">
-                ゲームプレイ
-              </Link>
-              <Link href="#news" className="hover:text-secondary transition-colors px-4">
+              <Link href="/news" className="hover:text-secondary transition-colors px-4">
                 ニュース
               </Link>
-              <Link href="#community" className="hover:text-secondary transition-colors px-4">
-                コミュニティ
+              <Link href="/results" className="hover:text-secondary transition-colors px-4">
+                試合結果
               </Link>
-              <Link href="#buy" className="bg-accent hover:bg-opacity-80 transition-colors px-6 py-2 rounded-full font-medium mx-4">
-                今すぐ購入
+              <Link href="/schedule" className="hover:text-secondary transition-colors px-4">
+                スケジュール
+              </Link>
+              <Link href="/teams" className="hover:text-secondary transition-colors px-4">
+                チーム
+              </Link>
+              <Link href="https://lolesports.com" target="_blank" rel="noopener noreferrer" className="bg-accent hover:bg-opacity-80 transition-colors px-6 py-2 rounded-full font-medium mx-4">
+                公式サイト
               </Link>
             </nav>
           </div>
@@ -82,4 +82,4 @@ export default function Header() {
       </div>
     </header>
   );
-} 
+}
